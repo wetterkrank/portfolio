@@ -6,6 +6,7 @@ const theme: DefaultTheme = {
     secondary: "slategray",
     emphasis: "red",
     back: "#e6f1ff",
+    placeholder: "lightgray",
   },
 };
 

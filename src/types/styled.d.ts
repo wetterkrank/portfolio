@@ -7,6 +7,7 @@ declare module "styled-components" {
       secondary: string;
       emphasis: string;
       back: string;
+      placeholder: string;
     };
   }
 }

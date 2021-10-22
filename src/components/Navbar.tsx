@@ -57,9 +57,13 @@ export const Navbar = ({ navLinks }: NavbarProps) => {
             </li>
           ))}
         </ul>
-        <SideMenu open={menuOpen} closeFn={() => setMenuOpen(false)} />
+        <SideMenu
+          open={menuOpen}
+          closeFn={() => setMenuOpen(false)}
+          navLinks={navLinks}
+        />
       </StyledNavigation>
-      <BurgerButton onClick={() => setMenuOpen(false)} />
+      <BurgerButton onClick={() => setMenuOpen(true)} />
     </StyledHeader>
   );
 };

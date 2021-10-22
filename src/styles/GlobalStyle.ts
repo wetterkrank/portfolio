@@ -16,6 +16,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    padding: 0;
+    margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -26,6 +28,10 @@ const GlobalStyle = createGlobalStyle`
   :focus {
     outline: 2px dashed ${({ theme }) => theme.colors.emphasis};
     outline-offset: 3px;
+  }
+
+  h4 {
+    margin: 8px 0 8px 0;
   }
 `;
 

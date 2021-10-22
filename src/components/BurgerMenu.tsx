@@ -1,5 +1,6 @@
 import OffCanvas from "react-aria-offcanvas";
 import styled from "styled-components";
+import { BurgerIcon, CloseIcon } from "./BurgerMenu.icons";
 
 const StyledBurgerButton = styled.button`
   display: none;
@@ -17,51 +18,51 @@ const StyledBurgerButton = styled.button`
 `;
 
 export const BurgerButton = ({ onClick }: { onClick: () => void }) => (
-  <StyledBurgerButton>
-    <svg
-      width="40px"
-      height="40px"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M4 6h16M4 12h16M4 18h16"
-      />
-    </svg>
+  <StyledBurgerButton onClick={onClick}>
+    <BurgerIcon />
   </StyledBurgerButton>
 );
 
-const CloseButton = (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M6 18L18 6M6 6l12 12"
-    />
-  </svg>
+const CloseButton = ({ onClick }: { onClick: () => void }) => (
+  <StyledBurgerButton onClick={onClick}>
+    <CloseIcon />
+  </StyledBurgerButton>
 );
 
 type SideMenuProps = {
   open: boolean;
   closeFn: () => void;
+  navLinks: {
+    name: string;
+    url: string;
+  }[];
 };
 
-export const SideMenu = ({ open, closeFn }: SideMenuProps) => {
+const offCanvasStyle = {
+  content: {
+    height: "100vh",
+  },
+  overlay: {},
+};
+
+export const SideMenu = ({ open, closeFn, navLinks }: SideMenuProps) => {
   return (
     <nav>
-      <OffCanvas isOpen={open} onClose={closeFn} labelledby="menu-button">
-        {CloseButton}
+      <OffCanvas
+        isOpen={open}
+        onClose={closeFn}
+        mainContainerSelector="#root"
+        style={offCanvasStyle}
+        labelledby="menu-button"
+      >
+        <CloseButton onClick={closeFn} />
+        <ul>
+          {navLinks.map((link) => (
+            <li key={link.name}>
+              <a href={link.url}>{link.name}</a>
+            </li>
+          ))}
+        </ul>
       </OffCanvas>
     </nav>
   );
