@@ -11,12 +11,17 @@ declare module "styled-components" {
     colors: {
       primary: string;
       secondary: string;
+      tertiary: string;
+      contrasting: string;
       emphasis: string;
       back: string;
+      text: string;
       placeholder: string;
     };
     breakpoints: {
-      narrow: string;
+      sm: string;
+      md: string;
+      xl: string;
     };
     borders: {
       radius: string;

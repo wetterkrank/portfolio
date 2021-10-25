@@ -17,7 +17,7 @@ const StyledAvatar = styled.div`
 
 export const Avatar = ({ src, alt }: { src: string; alt: string }) => {
   return (
-    <StyledAvatar>
+    <StyledAvatar className="avatar">
       {src ? <img src={src} alt={alt} /> : <div></div>}
     </StyledAvatar>
   );

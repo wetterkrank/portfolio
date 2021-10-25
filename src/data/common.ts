@@ -11,10 +11,6 @@ const common = {
         url: "/#about",
       },
       {
-        name: "Experience",
-        url: "/#job",
-      },
-      {
         name: "Projects",
         url: "/#projects",
       },

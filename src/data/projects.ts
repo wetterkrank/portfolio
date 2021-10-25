@@ -5,7 +5,8 @@ const projects: ProjectCardData[] = [
     name: "Hoome.com",
     url: "https://hoome.com",
     github: "",
-    description: "",
+    description:
+      "A real estate portal for Spanish and German markets. I was one of the 4 developers working on this project. <p> What I did: implemented backoffice pages, main app's home page and property details, static content pages (blog content fetched from a CMS), React components used throughout the app etc.</p>",
     tech: ["TypeScript", "Next.js", "styled-components", "Jest", "Storybook"],
     image: "/media/projects/hoome.jpg",
   },
@@ -23,7 +24,7 @@ const projects: ProjectCardData[] = [
     url: "https://www.ttr66.ru/",
     github: "",
     description:
-      "Website for a regional garments wholesaler. In order to make it fast and maintanable, I've used a minimalistic theme and written a plugin adding extra page layouts and the import of XML product catalog from a warehouse management system.",
+      "Website for a regional garments wholesaler.<br/> To make if fast and maintanable, I've used a minimalistic WP theme and written a custom plugin to add extra page layouts and the import of XML catalog from a warehouse management system.",
     tech: ["PHP", "WordPress"],
     image: "/media/projects/ttr66.png",
   },
@@ -65,7 +66,8 @@ const projects: ProjectCardData[] = [
     name: "Genderful",
     url: "http://genderful.yak.supplies/",
     github: "https://github.com/wetterkrank/genderful",
-    description: "A toy neural network that tells German noun genders.",
+    description:
+      "A toy neural network that makes predictions of German noun genders.",
     tech: ["Python", "Tensorflow", "Docker", "CherryPy", "Bootstrap"],
     image: "",
   },

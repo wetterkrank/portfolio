@@ -125,9 +125,8 @@ const StyledProjectCard = styled.li`
     z-index: 2;
     padding: 25px;
     border-radius: ${({ theme }) => theme.borders.radius};
-    background-color: var(--light-navy);
+    background-color: ${({ theme }) => theme.colors.tertiary};
     color: var(--light-slate);
-    font-size: var(--fz-lg);
     @media (max-width: 768px) {
       padding: 20px 0;
       background-color: transparent;

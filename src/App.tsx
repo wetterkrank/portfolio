@@ -18,7 +18,7 @@ function App() {
         <section id="about">
           <h2>About me</h2>
           <p>
-            In 2020, I decided to pivot my career and become a web developer. By
+            In 2020, I decided to pivot my career and become a programmer. By
             that time, I've been working in IT for more than 12 years. Although
             I had some coding experience (the world has yet to see my Pacman
             written in BASIC in elementary school), I've never built anything
@@ -32,7 +32,7 @@ function App() {
           <h3>Tech stack</h3>
           <ul>
             <li>
-              Most confident with: <b>TypeScript</b>, <b>React.js</b>,{" "}
+              Have most experience with: <b>TypeScript</b>, <b>React.js</b>,{" "}
               <b>Next.js</b>
             </li>
             <li>Using for pet projects: Python and MongoDB</li>
@@ -44,7 +44,7 @@ function App() {
               Can (and have) set up a Docker container, nginx, Postfix and Let's
               Encrypt, can write a shell script
             </li>
-            <li>Have experience with git, GitHub, Vercel and Heroku</li>
+            <li>Have worked with GitHub, Vercel and Heroku</li>
           </ul>
           <h3>What I value</h3>
           <p>

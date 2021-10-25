@@ -4,14 +4,19 @@ import mixins from "./mixins";
 const theme: DefaultTheme = {
   mixins,
   colors: {
-    primary: "",
-    secondary: "slategray",
-    emphasis: "red",
-    back: "#e6f1ff",
-    placeholder: "lightgray",
+    primary: "#33658A",
+    secondary: "#2F4858",
+    tertiary: "#81A4CD",
+    contrasting: "#F6AE2D",
+    emphasis: "#F26419",
+    back: "#E6ECF3",
+    text: "#000000",
+    placeholder: "#D3D3D3",
   },
   breakpoints: {
-    narrow: "768px",
+    sm: "576px",
+    md: "768px",
+    xl: "1200px",
   },
   borders: {
     radius: "3px",

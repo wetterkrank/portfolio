@@ -4,7 +4,7 @@ const StyledHeader = styled.header`
   height: var(--nav-full-height);
   display: grid;
   grid-template-columns: max-content auto;
-  @media (max-width: ${({ theme }) => theme.breakpoints.narrow}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     grid-template-columns: auto;
   }
 
@@ -23,7 +23,7 @@ const StyledLogo = styled.nav`
 
 const StyledNavigation = styled.nav`
   justify-self: end;
-  @media (max-width: ${({ theme }) => theme.breakpoints.narrow}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     width: 100%;
     justify-self: start;
     background-color: lightblue;

@@ -9,16 +9,22 @@ type HeroProps = {
 };
 
 const StyledHero = styled.div`
+  min-height: 220px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   @media (max-width: 640px) {
     flex-direction: column;
   }
-  div h2 {
+  .intro,
+  .avatar {
+    margin-right: 16px;
+  }
+  .intro h2 {
     margin-bottom: 8px;
   }
-  div p {
+  .intro p {
     margin-top: 0;
   }
 `;
@@ -26,7 +32,7 @@ const StyledHero = styled.div`
 export const Hero = ({ image }: HeroProps) => {
   return (
     <StyledHero>
-      <div>
+      <div className="intro">
         <h2>Hi, I'm Alex,</h2>
         <p>a full stack web developer from Berlin</p>
       </div>
