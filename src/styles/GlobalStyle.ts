@@ -33,6 +33,30 @@ const GlobalStyle = createGlobalStyle`
   h4 {
     margin: 8px 0 8px 0;
   }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    transition: var(--transition);
+    &:hover,
+    &:focus {
+      color: var(--green);
+    }
+    &.inline-link {
+      ${({ theme }) => theme.mixins.inlineLink};
+    }
+  }
+
+  img,
+  svg,
+  picture {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+  }
 `;
 
 export default GlobalStyle;

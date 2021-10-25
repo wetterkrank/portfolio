@@ -2,9 +2,8 @@ import { ThemeProvider } from "styled-components";
 
 import { Layout } from "./components/Layout";
 import { GlobalStyle, theme } from "./styles";
-import { common, projects, jobs } from "./data";
+import { common, projects } from "./data";
 import { Hero } from "./components/Hero";
-import { JobsList } from "./components/JobsList";
 import { ProjectsList } from "./components/ProjectCards";
 
 function App() {
@@ -19,16 +18,16 @@ function App() {
         <section id="about">
           <h2>About me</h2>
           <p>
-            In 2020, I've decided to pivot my career and become a web developer.
-            I've had some programming experience (the world has yet to see my
-            first BASIC program written in elementary school) and I worked in
-            the IT for over 10 years, but never coded anything production-grade
-            myself.
+            In 2020, I decided to pivot my career and become a web developer. By
+            that time, I've been working in IT for more than 12 years. Although
+            I had some coding experience (the world has yet to see my Pacman
+            written in BASIC in elementary school), I've never built anything
+            production-grade myself.
           </p>
           <p>
-            So, I've enrolled in Le Wagon bootcamp in Berlin and completed it in
+            So, I've enrolled in Le Wagon Bootcamp in Berlin and completed it in
             December 2020. After that, I found my first developer job and have
-            been enjoying it every single day since then.
+            been enjoying it every single day!
           </p>
           <h3>Tech stack</h3>
           <ul>
@@ -36,29 +35,22 @@ function App() {
               Most confident with: <b>TypeScript</b>, <b>React.js</b>,{" "}
               <b>Next.js</b>
             </li>
-            <li>
-              Using for pet projects: Python (without frameworks) and MongoDB
-            </li>
+            <li>Using for pet projects: Python and MongoDB</li>
             <li>
               Completed a big study project with: Ruby on Rails and PostgreSQL
             </li>
             <li>Did a few paid gigs with: PHP, WordPress + WooCommerce</li>
             <li>
               Can (and have) set up a Docker container, nginx, Postfix and Let's
-              Encrypt, have written a couple of shell scripts
+              Encrypt, can write a shell script
             </li>
-            <li>Have working experience with git, GitHub, Vercel and Heroku</li>
+            <li>Have experience with git, GitHub, Vercel and Heroku</li>
           </ul>
           <h3>What I value</h3>
           <p>
-            Doing meaningful job, teamwork, writing simple and maintainable
-            code, constant learning
+            Meaningful work, writing simple and maintainable code, teamwork,
+            constant learning
           </p>
-        </section>
-
-        <section id="job">
-          <h2>Professional experience</h2>
-          <JobsList jobs={jobs} />
         </section>
 
         <section id="projects">

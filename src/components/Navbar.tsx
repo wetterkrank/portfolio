@@ -1,11 +1,13 @@
-import { useState } from "react";
 import styled from "styled-components";
-import { BurgerButton, SideMenu } from "./BurgerMenu";
 
 const StyledHeader = styled.header`
   height: var(--nav-full-height);
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: max-content auto;
+  @media (max-width: ${({ theme }) => theme.breakpoints.narrow}) {
+    grid-template-columns: auto;
+  }
+
   align-items: center;
   padding-left: var(--main-padding-x);
   padding-right: var(--main-padding-x);
@@ -20,18 +22,20 @@ const StyledLogo = styled.nav`
 `;
 
 const StyledNavigation = styled.nav`
-  @media (max-width: 768px) {
-    display: none;
+  justify-self: end;
+  @media (max-width: ${({ theme }) => theme.breakpoints.narrow}) {
+    width: 100%;
+    justify-self: start;
+    background-color: lightblue;
   }
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-  }
-  li {
-    float: left;
-    padding: 16px;
+    display: grid;
+    justify-content: start;
+    grid-auto-flow: column;
+    grid-gap: 16px;
   }
 `;
 
@@ -43,27 +47,22 @@ type NavbarProps = {
 };
 
 export const Navbar = ({ navLinks }: NavbarProps) => {
-  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <StyledHeader>
-      <StyledLogo>
-        <a href="\">Alex Antsiferov</a>
-      </StyledLogo>
-      <StyledNavigation>
-        <ul>
-          {navLinks.map((link) => (
-            <li key={link.name}>
-              <a href={link.url}>{link.name}</a>
-            </li>
-          ))}
-        </ul>
-        <SideMenu
-          open={menuOpen}
-          closeFn={() => setMenuOpen(false)}
-          navLinks={navLinks}
-        />
-      </StyledNavigation>
-      <BurgerButton onClick={() => setMenuOpen(true)} />
-    </StyledHeader>
+    <>
+      <StyledHeader>
+        <StyledLogo>
+          <a href="\">Alex Antsiferov</a>
+        </StyledLogo>
+        <StyledNavigation>
+          <ul>
+            {navLinks.map((link) => (
+              <li key={link.name}>
+                <a href={link.url}>{link.name}</a>
+              </li>
+            ))}
+          </ul>
+        </StyledNavigation>
+      </StyledHeader>
+    </>
   );
 };
