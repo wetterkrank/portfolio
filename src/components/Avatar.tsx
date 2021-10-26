@@ -4,6 +4,7 @@ const StyledAvatar = styled.div`
   border-radius: 9999px;
   width: 144px;
   height: 144px;
+  border-style: solid;
 
   overflow: hidden;
   background: ${({ theme }) => theme.colors.placeholder};

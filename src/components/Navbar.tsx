@@ -7,10 +7,23 @@ const StyledHeader = styled.header`
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     grid-template-columns: auto;
   }
-
   align-items: center;
   padding-left: var(--main-padding-x);
   padding-right: var(--main-padding-x);
+
+  background-color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.textAlt};
+
+  a {
+    &:hover {
+      color: ${({ theme }) => theme.colors.text};
+    }
+    &:focus {
+      color: ${({ theme }) => theme.colors.text};
+      outline: 1px dashed ${({ theme }) => theme.colors.text};
+      outline-offset: 3px;
+    }
+  }
 `;
 
 const StyledLogo = styled.nav`
@@ -35,7 +48,7 @@ const StyledNavigation = styled.nav`
     display: grid;
     justify-content: start;
     grid-auto-flow: column;
-    grid-gap: 16px;
+    grid-gap: 24px;
   }
 `;
 

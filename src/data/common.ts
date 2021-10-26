@@ -15,15 +15,19 @@ const common = {
         url: "/#projects",
       },
       {
+        name: "Contacts",
+        url: "/#contacts",
+      },
+      {
         name: "Blog",
         url: "https://blog.yak.supplies",
       },
       {
-        name: "Contacts",
-        url: "/#contacts",
+        name: "CV",
+        url: "https://blog.yak.supplies",
       },
     ],
-    socialLinks: [
+    footerLinks: [
       {
         name: "GitHub",
         url: "https://github.com/wetterkrank",

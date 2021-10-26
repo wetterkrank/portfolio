@@ -23,11 +23,12 @@ const GlobalStyle = createGlobalStyle`
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: ${({ theme }) => theme.colors.back};
+    color: ${({ theme }) => theme.colors.text};
+    background-color: ${({ theme }) => theme.colors.background};
   }
 
   :focus {
-    outline: 2px dashed ${({ theme }) => theme.colors.emphasis};
+    outline: 1px dashed ${({ theme }) => theme.colors.linkActive};
     outline-offset: 3px;
   }
 
@@ -41,13 +42,10 @@ const GlobalStyle = createGlobalStyle`
     text-decoration-skip-ink: auto;
     color: inherit;
     position: relative;
-    transition: var(--transition);
+    transition: ${({ theme }) => theme.transitions.default};;
     &:hover,
     &:focus {
-      color: var(--green);
-    }
-    &.inline-link {
-      ${({ theme }) => theme.mixins.inlineLink};
+      color: ${({ theme }) => theme.colors.linkActive};
     }
   }
 

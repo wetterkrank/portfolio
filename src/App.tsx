@@ -61,8 +61,9 @@ function App() {
         <section id="contacts">
           <h2>Contacts</h2>
           <ul>
-            <li>Phone</li>
             <li>E-mail</li>
+            <li>Phone</li>
+            <li>LinkedIn</li>
           </ul>
         </section>
       </Layout>

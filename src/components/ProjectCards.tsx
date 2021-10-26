@@ -7,7 +7,10 @@ export type ProjectCardData = {
   github: string;
   description: string;
   tech: string[];
-  image: string;
+  image: {
+    src: string;
+    srcset: string;
+  };
 };
 
 const StyledProjectCard = styled.li`
@@ -17,13 +20,13 @@ const StyledProjectCard = styled.li`
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
   @media (max-width: 768px) {
-    ${({ theme }) => theme.mixins.boxShadow};
+    /* ${({ theme }) => theme.mixins.boxShadow}; */
   }
 
   &:not(:last-of-type) {
     margin-bottom: 80px;
     @media (max-width: 768px) {
-      margin-bottom: 60px;
+      margin-bottom: 50px;
     }
     @media (max-width: 480px) {
       margin-bottom: 30px;
@@ -98,12 +101,10 @@ const StyledProjectCard = styled.li`
   }
 
   .project-title {
-    color: var(--lightest-slate);
     @media (min-width: 768px) {
       margin: 0 0 20px;
     }
     @media (max-width: 768px) {
-      color: var(--white);
       a {
         position: static;
         &:before {
@@ -125,23 +126,21 @@ const StyledProjectCard = styled.li`
     z-index: 2;
     padding: 25px;
     border-radius: ${({ theme }) => theme.borders.radius};
-    background-color: ${({ theme }) => theme.colors.tertiary};
-    color: var(--light-slate);
+    background-color: ${({ theme }) => theme.colors.backgroundAlt};
+    color: ${({ theme }) => theme.colors.textAlt};
     @media (max-width: 768px) {
       padding: 20px 0;
+      color: ${({ theme }) => theme.colors.text};
       background-color: transparent;
       box-shadow: none;
       &:hover {
         box-shadow: none;
       }
     }
-    a {
-      ${({ theme }) => theme.mixins.inlineLink};
-    }
-    strong {
+    /* strong {
       color: var(--white);
       font-weight: normal;
-    }
+    } */
   }
 
   .project-tech-list {
@@ -154,16 +153,16 @@ const StyledProjectCard = styled.li`
     list-style: none;
     li {
       margin: 0 20px 5px 0;
-      color: var(--light-slate);
-      font-family: var(--font-mono);
-      font-size: var(--fz-xs);
+      color: ${({ theme }) => theme.colors.text};
+      /* font-family: var(--font-mono); */
+      /* font-size: var(--fz-xs); */
       white-space: nowrap;
+      /* text-shadow: 0.5px 0.5px 4px black; */
     }
     @media (max-width: 768px) {
       margin: 10px 0;
       li {
         margin: 0 10px 5px 0;
-        color: var(--lightest-slate);
       }
     }
   }
@@ -174,7 +173,6 @@ const StyledProjectCard = styled.li`
     position: relative;
     margin-top: 10px;
     margin-left: -10px;
-    color: var(--lightest-slate);
     a {
       ${({ theme }) => theme.mixins.flexCenter};
       padding: 10px;
@@ -206,7 +204,7 @@ const StyledProjectCard = styled.li`
     a {
       width: 100%;
       height: 100%;
-      background-color: var(--green);
+      background-color: ${({ theme }) => theme.colors.secondary};
       border-radius: ${({ theme }) => theme.borders.radius};
       vertical-align: middle;
       &:hover,
@@ -229,8 +227,8 @@ const StyledProjectCard = styled.li`
         right: 0;
         bottom: 0;
         z-index: 3;
-        transition: var(--transition);
-        background-color: var(--navy);
+        transition: ${({ theme }) => theme.transitions.default};
+        /* background-color: var(--navy); */
         mix-blend-mode: screen;
       }
     }
@@ -242,7 +240,8 @@ const StyledProjectCard = styled.li`
       filter: grayscale(100%) contrast(1) brightness(90%);
       @media (max-width: 768px) {
         height: 100%;
-        filter: grayscale(100%) contrast(1) brightness(50%);
+        filter: grayscale(100%) contrast(1) brightness(20%);
+        /* filter: opacity(50%); */
       }
     }
   } // .project-image
@@ -289,8 +288,8 @@ export const ProjectCard = ({ data }: { data: ProjectCardData }) => {
       <div className="project-image">
         <a href={url ? url : github ? github : "#"}>
           <picture>
-            <source srcSet={image} />
-            <img src={image} alt={name} className="img" />
+            <source srcSet={image.srcset} />
+            <img src={image.src} alt={name} className="img" />
           </picture>
         </a>
       </div>

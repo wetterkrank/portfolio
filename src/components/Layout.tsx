@@ -11,6 +11,7 @@ const StyledWrapper = styled.main`
   display: grid;
   grid-auto-flow: row;
   gap: 24px;
+  margin-bottom: 32px;
 `;
 
 type LayoutProps = {
@@ -20,7 +21,7 @@ type LayoutProps = {
       name: string;
       url: string;
     }[];
-    socialLinks: {
+    footerLinks: {
       name: string;
       url: string;
     }[];
@@ -31,6 +32,6 @@ export const Layout = ({ children, links }: LayoutProps) => (
   <>
     <Navbar navLinks={links.navLinks} />
     <StyledWrapper>{children}</StyledWrapper>
-    <Footer socialLinks={links.socialLinks} />
+    <Footer links={links.footerLinks} />
   </>
 );

@@ -5,17 +5,19 @@ declare module "styled-components" {
   export interface DefaultTheme {
     mixins: {
       flexCenter: FlattenSimpleInterpolation;
-      inlineLink: FlattenSimpleInterpolation;
       boxShadow: FlattenSimpleInterpolation;
     };
     colors: {
       primary: string;
       secondary: string;
-      tertiary: string;
-      contrasting: string;
-      emphasis: string;
-      back: string;
+      background: string;
+      backgroundAlt: string;
       text: string;
+      textAlt: string;
+      placeholder: string;
+      link: string;
+      linkActive: string;
+      linkHover: string;
       placeholder: string;
     };
     breakpoints: {
@@ -25,6 +27,9 @@ declare module "styled-components" {
     };
     borders: {
       radius: string;
+    };
+    transitions: {
+      default: string;
     };
   }
 }

@@ -6,44 +6,12 @@ const mixins = {
     justify-content: center;
     align-items: center;
   `,
-  inlineLink: css`
-    display: inline-block;
-    text-decoration: none;
-    text-decoration-skip-ink: auto;
-    position: relative;
-    transition: var(--transition);
-    color: var(--green);
-    &:hover,
-    &:focus,
-    &:active {
-      color: var(--green);
-      outline: 0;
-      &:after {
-        width: 100%;
-      }
-      & > * {
-        color: var(--green) !important;
-        transition: var(--transition);
-      }
-    }
-    &:after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 1px;
-      position: relative;
-      bottom: 0.37em;
-      background-color: var(--green);
-      transition: var(--transition);
-      opacity: 0.5;
-    }
-  `,
   boxShadow: css`
-    box-shadow: 0 10px 30px -15px var(--navy-shadow);
-    transition: var(--transition);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
     &:hover,
     &:focus {
-      box-shadow: 0 20px 30px -15px var(--navy-shadow);
+      box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.4);
     }
   `,
 };
