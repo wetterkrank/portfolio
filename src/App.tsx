@@ -59,11 +59,22 @@ function App() {
         </section>
 
         <section id="contacts">
-          <h2>Contacts</h2>
+          <h2>Get in touch</h2>
+          <p>
+            You have a project and would like to hire me? Send me a message:
+          </p>
           <ul>
-            <li>E-mail</li>
-            <li>Phone</li>
-            <li>LinkedIn</li>
+            <li>
+              <a href="mailto:antsiferov@gmail.com">antsiferov@gmail.com</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/antsiferov/">
+                linkedin.com/in/antsiferov
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me/wetterkrank">telegram: wetterkrank</a>
+            </li>
           </ul>
         </section>
       </Layout>

@@ -11,7 +11,7 @@ const StyledWrapper = styled.main`
   display: grid;
   grid-auto-flow: row;
   gap: 24px;
-  margin-bottom: 32px;
+  margin-bottom: 48px;
 `;
 
 type LayoutProps = {

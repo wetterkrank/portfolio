@@ -5,15 +5,14 @@ import mixins from "./mixins";
 const theme: DefaultTheme = {
   mixins,
   colors: {
-    primary: "#F6AE2D",
-    secondary: "#86BBD8",
-    backgroundAlt: "#FAF4D3",
-    background: "#2F4858",
-    textAlt: "#000000",
+    accent: "#F6AE2D",
+    accentSubdued: "#EB9C0A",
+    primary: "#415a77",
+    secondary: "#F8F7F9",
+    tertiary: "#1b263b",
+    overlay: "#DBE4EE",
     text: "#FFFFFF",
-    link: "#33658A",
-    linkActive: "#F6AE2D",
-    linkHover: "#F6AE2D",
+    textInverted: "#000000",
     placeholder: "#D3D3D3",
   },
   breakpoints: {

@@ -105,6 +105,7 @@ const StyledProjectCard = styled.li`
       margin: 0 0 20px;
     }
     @media (max-width: 768px) {
+      margin: 0 0 10px;
       a {
         position: static;
         &:before {
@@ -126,8 +127,8 @@ const StyledProjectCard = styled.li`
     z-index: 2;
     padding: 25px;
     border-radius: ${({ theme }) => theme.borders.radius};
-    background-color: ${({ theme }) => theme.colors.backgroundAlt};
-    color: ${({ theme }) => theme.colors.textAlt};
+    background-color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.textInverted};
     @media (max-width: 768px) {
       padding: 20px 0;
       color: ${({ theme }) => theme.colors.text};
@@ -253,9 +254,9 @@ export const ProjectCard = ({ data }: { data: ProjectCardData }) => {
     <StyledProjectCard>
       <div className="project-content">
         <div>
-          <h4 className="project-title">
+          <h3 className="project-title">
             <a href={url}>{name}</a>
-          </h4>
+          </h3>
 
           <div
             className="project-description"

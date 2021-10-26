@@ -24,29 +24,25 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: ${({ theme }) => theme.colors.text};
-    background-color: ${({ theme }) => theme.colors.background};
+    background-color: ${({ theme }) => theme.colors.primary};
   }
 
   :focus {
-    outline: 1px dashed ${({ theme }) => theme.colors.linkActive};
+    outline: 1px dashed ${({ theme }) => theme.colors.accent};
     outline-offset: 3px;
-  }
-
-  h4 {
-    margin: 8px 0 8px 0;
   }
 
   a {
     display: inline-block;
     text-decoration: none;
     text-decoration-skip-ink: auto;
-    color: inherit;
     position: relative;
-    transition: ${({ theme }) => theme.transitions.default};;
+    color: ${({ theme }) => theme.colors.accentSubdued};;
     &:hover,
     &:focus {
-      color: ${({ theme }) => theme.colors.linkActive};
+      color: ${({ theme }) => theme.colors.accent};
     }
+    transition: ${({ theme }) => theme.transitions.default};;
   }
 
   img,

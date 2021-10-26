@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { GitHubIcon } from "./icons";
 
 const StyledFooter = styled.footer`
   min-height: var(--nav-full-height);
@@ -6,7 +7,7 @@ const StyledFooter = styled.footer`
   justify-content: center;
   align-items: center;
   padding: 16px var(--main-padding-x) 16px var(--main-padding-x) 16px;
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.tertiary};
 
   ul {
     list-style-type: none;
@@ -21,6 +22,10 @@ const StyledFooter = styled.footer`
     float: left;
     padding: 8px 16px 8px 16px;
   }
+  svg {
+    width: 20px;
+    height: 20px;
+  }
 `;
 
 type FooterProps = {
@@ -33,13 +38,12 @@ type FooterProps = {
 export const Footer = ({ links }: FooterProps) => {
   return (
     <StyledFooter>
-      <ul>
-        {links.map((link) => (
-          <li key={link.name}>
-            <a href={link.url}>{link.name}</a>
-          </li>
-        ))}
-      </ul>
+      <span>
+        © 2021 Alex Antsiferov // this site's code on{" "}
+        <a href="https://github.com/wetterkrank">
+          <GitHubIcon />
+        </a>
+      </span>
     </StyledFooter>
   );
 };

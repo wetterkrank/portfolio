@@ -11,10 +11,11 @@ const StyledHeader = styled.header`
   padding-left: var(--main-padding-x);
   padding-right: var(--main-padding-x);
 
-  background-color: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.textAlt};
+  background-color: ${({ theme }) => theme.colors.accent};
+  color: ${({ theme }) => theme.colors.textInverted};
 
   a {
+    color: ${({ theme }) => theme.colors.textInverted};
     &:hover {
       color: ${({ theme }) => theme.colors.text};
     }

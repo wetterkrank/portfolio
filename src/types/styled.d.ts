@@ -10,14 +10,12 @@ declare module "styled-components" {
     colors: {
       primary: string;
       secondary: string;
-      background: string;
-      backgroundAlt: string;
+      tertiary: string;
+      accent: string;
+      accentSubdued: string;
+      overlay: string;
       text: string;
-      textAlt: string;
-      placeholder: string;
-      link: string;
-      linkActive: string;
-      linkHover: string;
+      textInverted: string;
       placeholder: string;
     };
     breakpoints: {
