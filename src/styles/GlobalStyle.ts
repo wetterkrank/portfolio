@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
     width: 100%;
+    scroll-behavior: smooth;
   }
   *,
   *:before,
@@ -23,6 +24,7 @@ const GlobalStyle = createGlobalStyle`
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: 1.1em;
     color: ${({ theme }) => theme.colors.text};
     background-color: ${({ theme }) => theme.colors.primary};
   }

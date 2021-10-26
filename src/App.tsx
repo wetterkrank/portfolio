@@ -60,9 +60,7 @@ function App() {
 
         <section id="contacts">
           <h2>Get in touch</h2>
-          <p>
-            You have a project and would like to hire me? Send me a message:
-          </p>
+          <p>You would like to hire me? Send me a message:</p>
           <ul>
             <li>
               <a href="mailto:antsiferov@gmail.com">antsiferov@gmail.com</a>

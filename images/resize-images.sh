@@ -4,6 +4,7 @@
 DIR=./public/media/projects
 
 ## define image sizes
+# sizes=(180 270 360 540)
 sizes=(700 1050 1400)
 
 ## imagemagick function

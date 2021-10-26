@@ -28,20 +28,13 @@ const StyledFooter = styled.footer`
   }
 `;
 
-type FooterProps = {
-  links: {
-    name: string;
-    url: string;
-  }[];
-};
-
-export const Footer = ({ links }: FooterProps) => {
+export const Footer = () => {
   return (
     <StyledFooter>
       <span>
-        © 2021 Alex Antsiferov // this site's code on{" "}
+        © 2021 Alex Antsiferov ·{" "}
         <a href="https://github.com/wetterkrank">
-          <GitHubIcon />
+          this site's code on <GitHubIcon />
         </a>
       </span>
     </StyledFooter>

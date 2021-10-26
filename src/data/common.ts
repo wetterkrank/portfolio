@@ -1,7 +1,8 @@
 const common = {
-  email: "antsiferov@gmail.com",
   avatar: {
-    src: "/media/alex-antsiferov.jpg",
+    src: "/media/alex-antsiferov-540w.jpg",
+    srcset:
+      "/media/alex-antsiferov-180w.jpg, /media/alex-antsiferov-270w.jpg 1.5x, /media/alex-antsiferov-360w.jpg 2x, /media/alex-antsiferov-540w.jpg 3x",
     alt: "Alex Antsiferov",
   },
   links: {
@@ -21,24 +22,12 @@ const common = {
       {
         name: "Blog",
         url: "https://blog.yak.supplies",
+        external: true,
       },
       {
         name: "CV",
-        url: "https://blog.yak.supplies",
-      },
-    ],
-    footerLinks: [
-      {
-        name: "GitHub",
-        url: "https://github.com/wetterkrank",
-      },
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/antsiferov",
-      },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/wetterkrank",
+        url: "https://docs.google.com/document/d/1SyeWfH8Orgv8wKAPB9vLFzA5382Pl8aPwRwcGbCZMJk/",
+        external: true,
       },
     ],
   },

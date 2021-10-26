@@ -4,6 +4,7 @@ import { Avatar } from "./Avatar";
 type HeroProps = {
   image: {
     src: string;
+    srcset: string;
     alt: string;
   };
 };

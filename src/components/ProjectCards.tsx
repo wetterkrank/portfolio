@@ -20,17 +20,15 @@ const StyledProjectCard = styled.li`
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
   @media (max-width: 768px) {
-    /* ${({ theme }) => theme.mixins.boxShadow}; */
+    ${({ theme }) => theme.mixins.boxShadow};
   }
 
-  &:not(:last-of-type) {
-    margin-bottom: 80px;
-    @media (max-width: 768px) {
-      margin-bottom: 50px;
-    }
-    @media (max-width: 480px) {
-      margin-bottom: 30px;
-    }
+  margin-bottom: 80px;
+  @media (max-width: 768px) {
+    margin-bottom: 50px;
+  }
+  @media (max-width: 480px) {
+    margin-bottom: 30px;
   }
 
   &:nth-of-type(odd) {

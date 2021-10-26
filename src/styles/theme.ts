@@ -1,7 +1,6 @@
 import { DefaultTheme } from "styled-components";
 import mixins from "./mixins";
 
-// NB: Set theme color in the index.html
 const theme: DefaultTheme = {
   mixins,
   colors: {

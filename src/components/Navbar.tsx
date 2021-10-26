@@ -4,9 +4,6 @@ const StyledHeader = styled.header`
   height: var(--nav-full-height);
   display: grid;
   grid-template-columns: max-content auto;
-  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-    grid-template-columns: auto;
-  }
   align-items: center;
   padding-left: var(--main-padding-x);
   padding-right: var(--main-padding-x);
@@ -25,6 +22,15 @@ const StyledHeader = styled.header`
       outline-offset: 3px;
     }
   }
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    grid-template-columns: auto;
+    align-content: center;
+    grid-gap: 8px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    padding-left: var(--main-padding-x-sm);
+    padding-right: var(--main-padding-x-sm);
+  }
 `;
 
 const StyledLogo = styled.nav`
@@ -38,9 +44,7 @@ const StyledLogo = styled.nav`
 const StyledNavigation = styled.nav`
   justify-self: end;
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-    width: 100%;
     justify-self: start;
-    background-color: lightblue;
   }
   ul {
     list-style-type: none;
@@ -50,13 +54,17 @@ const StyledNavigation = styled.nav`
     justify-content: start;
     grid-auto-flow: column;
     grid-gap: 24px;
+    @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+      grid-gap: 16px;
+    }
   }
 `;
 
-type NavbarProps = {
+export type NavbarProps = {
   navLinks: {
     name: string;
     url: string;
+    external?: boolean;
   }[];
 };
 
