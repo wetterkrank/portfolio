@@ -46,10 +46,10 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     text-decoration-skip-ink: auto;
     position: relative;
-    color: ${({ theme }) => theme.colors.accent};;
+    color: ${({ theme }) => theme.colors.accent};
     &:hover,
     &:focus {
-      filter: saturate(200%);
+      color: ${({ theme }) => theme.colors.starkAccent};
     }
     transition: ${({ theme }) => theme.transitions.default};
   }

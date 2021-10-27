@@ -15,6 +15,7 @@ declare module "styled-components" {
       overlay: string;
       text: string;
       textInverted: string;
+      starkAccent: string;
       placeholder: string;
     };
     breakpoints: {

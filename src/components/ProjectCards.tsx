@@ -136,10 +136,6 @@ const StyledProjectCard = styled.li`
         box-shadow: none;
       }
     }
-    /* strong {
-      color: var(--white);
-      font-weight: normal;
-    } */
   }
 
   .project-tech-list {
@@ -156,7 +152,6 @@ const StyledProjectCard = styled.li`
       /* font-family: var(--font-mono); */
       /* font-size: var(--fz-xs); */
       white-space: nowrap;
-      /* text-shadow: 0.5px 0.5px 4px black; */
     }
     @media (max-width: 768px) {
       margin: 10px 0;

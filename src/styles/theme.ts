@@ -11,6 +11,7 @@ const theme: DefaultTheme = {
     overlay: "#faf9f9",
     text: "#FFFFFF",
     textInverted: "#000000",
+    starkAccent: "#5CFFBF",
     placeholder: "#E4E4E4",
   },
   breakpoints: {
