@@ -6,7 +6,7 @@ const projects: ProjectCardData[] = [
     url: "https://hoome.com",
     github: "",
     description:
-      "A real estate portal for Spanish and German markets. <br/> I was one of the 4 developers working on this project. <p> What I did: implemented backoffice pages, main app's home page and property details, content pages (statically generated at build time, with blog content fetched from a CMS), different UI components used throughout the app.</p>",
+      "A real estate portal for Spanish and German markets, done in a team of 4 developers. <p> What I did: implemented backoffice pages, main app's home page and property details, content pages (statically generated at build time, with blog content fetched from a CMS), different UI components used throughout the app.</p>",
     tech: ["TypeScript", "Next.js", "Jest", "Storybook"],
     image: {
       src: "/media/projects/hoome-1400w.jpg",

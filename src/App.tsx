@@ -32,7 +32,7 @@ function App() {
           <h3>Tech stack</h3>
           <ul>
             <li>
-              Have most experience with: <b>TypeScript</b>, <b>React.js</b>,{" "}
+              I have most experience with: <b>TypeScript</b>, <b>React.js</b>,{" "}
               <b>Next.js</b>
             </li>
             <li>Using for pet projects: Python and MongoDB</li>
@@ -60,7 +60,7 @@ function App() {
 
         <section id="contacts">
           <h2>Get in touch</h2>
-          <p>You would like to hire me? Send me a message:</p>
+          <p>I'm open to job opportunities. Send me a message:</p>
           <ul>
             <li>
               <a href="mailto:antsiferov@gmail.com">antsiferov@gmail.com</a>

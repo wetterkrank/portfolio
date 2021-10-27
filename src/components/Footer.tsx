@@ -6,22 +6,19 @@ const StyledFooter = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px var(--main-padding-x) 16px var(--main-padding-x) 16px;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: var(--main-padding-x);
+  padding-right: var(--main-padding-x);
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    padding-left: var(--main-padding-x-sm);
+    padding-right: var(--main-padding-x-sm);
+  }
+
   background-color: ${({ theme }) => theme.colors.tertiary};
 
-  ul {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  li {
-    float: left;
-    padding: 8px 16px 8px 16px;
-  }
   svg {
     width: 20px;
     height: 20px;
@@ -33,7 +30,7 @@ export const Footer = () => {
     <StyledFooter>
       <span>
         © 2021 Alex Antsiferov ·{" "}
-        <a href="https://github.com/wetterkrank">
+        <a href="https://github.com/wetterkrank/portfolio">
           this site's code on <GitHubIcon />
         </a>
       </span>

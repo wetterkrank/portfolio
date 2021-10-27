@@ -19,12 +19,13 @@ const GlobalStyle = createGlobalStyle`
   body {
     padding: 0;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+    font-family: Open Sans;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: ${({ theme }) => theme.colors.text};
     background-color: ${({ theme }) => theme.colors.primary};
   }
@@ -44,7 +45,7 @@ const GlobalStyle = createGlobalStyle`
     &:focus {
       color: ${({ theme }) => theme.colors.accent};
     }
-    transition: ${({ theme }) => theme.transitions.default};;
+    transition: ${({ theme }) => theme.transitions.default};
   }
 
   img,

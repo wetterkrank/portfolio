@@ -28,6 +28,7 @@ declare module "styled-components" {
     };
     transitions: {
       default: string;
+      fast: string;
     };
   }
 }

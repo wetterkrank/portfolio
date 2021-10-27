@@ -21,6 +21,7 @@ const StyledHeader = styled.header`
       outline: 1px dashed ${({ theme }) => theme.colors.text};
       outline-offset: 3px;
     }
+    transition: ${({ theme }) => theme.transitions.fast};
   }
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     grid-template-columns: auto;

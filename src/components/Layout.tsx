@@ -14,7 +14,6 @@ const StyledWrapper = styled.main`
   display: grid;
   grid-auto-flow: row;
   gap: 24px;
-  margin-bottom: 48px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     margin-top: 40px;

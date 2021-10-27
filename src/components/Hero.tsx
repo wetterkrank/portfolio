@@ -20,7 +20,7 @@ const StyledHero = styled.div`
   }
   .intro,
   .avatar {
-    margin-right: 16px;
+    margin-right: 24px;
   }
   .intro h2 {
     margin-bottom: 8px;
