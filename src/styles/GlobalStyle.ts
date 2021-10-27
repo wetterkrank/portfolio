@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     width: 100%;
     scroll-behavior: smooth;
+    scroll-padding-top: var(--nav-reduced-height);
   }
   *,
   *:before,

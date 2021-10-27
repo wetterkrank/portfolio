@@ -22,13 +22,13 @@ const StyledWrapper = styled.main`
   max-width: var(--wrapper-max-width);
   margin-left: auto;
   margin-right: auto;
+  margin-top: calc(var(--nav-full-height) + 80px);
   margin-bottom: 80px;
-  margin-top: 80px;
   display: grid;
   grid-auto-flow: row;
   gap: 24px;
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-    margin-top: 40px;
+    margin-top: calc(var(--nav-full-height) + 40px);
   }
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     padding-left: var(--main-padding-x-sm);

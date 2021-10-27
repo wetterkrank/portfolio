@@ -2,8 +2,10 @@ import styled from "styled-components";
 import { A } from "./icons";
 
 const StyledHeader = styled.header`
-  position: sticky;
+  position: fixed;
   top: 0px;
+  left: 0px;
+  right: 0px;
   height: var(--nav-full-height);
   z-index: ${({ theme }) => theme.zIndices.navbar};
   display: grid;
