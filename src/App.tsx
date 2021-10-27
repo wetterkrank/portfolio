@@ -21,8 +21,8 @@ function App() {
             In 2020, I decided to pivot my career and become a programmer. By
             that time, I've been working in IT for more than 12 years. Although
             I had some coding experience (the world has yet to see my Pacman
-            written in BASIC in elementary school), I've never built anything
-            production-grade myself.
+            game written in BASIC in elementary school), I've never built
+            anything production-grade myself.
           </p>
           <p>
             So, I've enrolled in Le Wagon Bootcamp in Berlin and completed it in
@@ -37,7 +37,7 @@ function App() {
             </li>
             <li>Using for pet projects: Python and MongoDB</li>
             <li>
-              Completed a big study project with: Ruby on Rails and PostgreSQL
+              Completed a study project with: Ruby on Rails and PostgreSQL
             </li>
             <li>Did a few paid gigs with: PHP, WordPress + WooCommerce</li>
             <li>

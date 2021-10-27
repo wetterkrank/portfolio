@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 import variables from "./variables";
-// import fonts from "./fonts";
 
 const GlobalStyle = createGlobalStyle`
   ${variables};
@@ -19,10 +18,9 @@ const GlobalStyle = createGlobalStyle`
   body {
     padding: 0;
     margin: 0;
-    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; */
-    font-family: Open Sans;
+    sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 1.2em;
