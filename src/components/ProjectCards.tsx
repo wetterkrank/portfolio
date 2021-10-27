@@ -102,6 +102,10 @@ const StyledProjectCard = styled.li`
     @media (min-width: 768px) {
       margin: 0 0 20px;
     }
+    a {
+      text-decoration: dotted underline 1px;
+      text-underline-offset: 2px;
+    }
     @media (max-width: 768px) {
       margin: 0 0 10px;
       a {
@@ -281,10 +285,14 @@ export const ProjectCard = ({ data }: { data: ProjectCardData }) => {
 
       <div className="project-image">
         <a href={url ? url : github ? github : "#"}>
-          <picture>
-            <source srcSet={image.srcset} />
-            <img src={image.src} alt={name} className="img" />
-          </picture>
+          <img
+            width="580px"
+            height="350px"
+            src={image.src}
+            srcSet={image.srcset}
+            alt={name}
+            className="img"
+          />
         </a>
       </div>
     </StyledProjectCard>

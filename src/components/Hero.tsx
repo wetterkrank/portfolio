@@ -13,9 +13,6 @@ const StyledHero = styled.div`
   min-height: 220px;
   ${({ theme }) => theme.mixins.flexCenter};
   flex-direction: row;
-  @media (max-width: 640px) {
-    flex-direction: column;
-  }
   .intro,
   .avatar {
     margin-right: 24px;
@@ -26,13 +23,21 @@ const StyledHero = styled.div`
   .intro p {
     margin-top: 0;
   }
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    flex-direction: column;
+    .intro,
+    .avatar {
+      margin-right: 0;
+      text-align: center;
+    }
+  }
 `;
 
 export const Hero = ({ image }: HeroProps) => {
   return (
     <StyledHero>
       <div className="intro">
-        <h2>Hi! I'm Alex Antsiferov,</h2>
+        <h2>Hi! I'm Alex,</h2>
         <p>a full stack web developer</p>
       </div>
       <Avatar {...image} />

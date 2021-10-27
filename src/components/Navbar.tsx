@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { A } from "./icons";
 
 const StyledHeader = styled.header`
   position: fixed;
@@ -29,22 +28,21 @@ const StyledHeader = styled.header`
     }
     transition: ${({ theme }) => theme.transitions.fast};
   }
-  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-    padding-left: var(--main-padding-x-sm);
-    padding-right: var(--main-padding-x-sm);
-  }
   &.reduced-height {
     height: var(--nav-reduced-height);
     ${({ theme }) => theme.mixins.boxShadow};
   }
   transition: ${({ theme }) => theme.transitions.fast};
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    padding-left: var(--main-padding-x-sm);
+    padding-right: var(--main-padding-x-sm);
+    grid-template-columns: auto;
+    justify-content: center;
+  }
 `;
 
 const StyledLogo = styled.nav`
-  svg {
-    height: 51px;
-    width: 34px;
-  }
+  font-size: 1.6em;
 `;
 
 const StyledNavigation = styled.nav`
@@ -60,11 +58,14 @@ const StyledNavigation = styled.nav`
     grid-auto-flow: column;
     justify-content: start;
     grid-gap: 24px;
-    &.nav-anchors {
-      @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-        display: none;
-      }
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    ul.nav-anchors {
+      display: none;
     }
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    display: none;
   }
 `;
 
@@ -90,10 +91,7 @@ export const Navbar = ({ navLinks }: NavbarProps) => {
     <>
       <StyledHeader>
         <StyledLogo>
-          <a href="\">
-            <A />
-            <A />
-          </a>
+          <a href="\">Alex Antsiferov</a>
         </StyledLogo>
         <StyledNavigation>
           <ul className="nav-anchors">{linkList(anchors)}</ul>

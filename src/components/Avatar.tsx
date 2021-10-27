@@ -28,7 +28,11 @@ export const Avatar = ({
 }) => {
   return (
     <StyledAvatar className="avatar">
-      {src ? <img src={src} srcSet={srcset} alt={alt} /> : <div></div>}
+      {src ? (
+        <img width="180px" height="180px" src={src} srcSet={srcset} alt={alt} />
+      ) : (
+        <div></div>
+      )}
     </StyledAvatar>
   );
 };
