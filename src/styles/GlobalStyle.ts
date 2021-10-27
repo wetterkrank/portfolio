@@ -33,15 +33,23 @@ const GlobalStyle = createGlobalStyle`
     outline-offset: 3px;
   }
 
+  h2, h3, h4 {
+    font-weight: normal;
+  }
+  strong {
+    font-weight: normal;
+    color: ${({ theme }) => theme.colors.accent};
+  }
+
   a {
     display: inline-block;
     text-decoration: none;
     text-decoration-skip-ink: auto;
     position: relative;
-    color: ${({ theme }) => theme.colors.accentSubdued};;
+    color: ${({ theme }) => theme.colors.accent};;
     &:hover,
     &:focus {
-      color: ${({ theme }) => theme.colors.accent};
+      filter: saturate(200%);
     }
     transition: ${({ theme }) => theme.transitions.default};
   }

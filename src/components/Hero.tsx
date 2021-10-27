@@ -11,10 +11,8 @@ type HeroProps = {
 
 const StyledHero = styled.div`
   min-height: 220px;
-  display: flex;
+  ${({ theme }) => theme.mixins.flexCenter};
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   @media (max-width: 640px) {
     flex-direction: column;
   }

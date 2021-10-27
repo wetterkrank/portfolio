@@ -4,15 +4,14 @@ import mixins from "./mixins";
 const theme: DefaultTheme = {
   mixins,
   colors: {
-    accent: "#F6AE2D",
-    accentSubdued: "#EB9C0A",
-    primary: "#415a77",
-    secondary: "#F8F7F9",
-    tertiary: "#1b263b",
-    overlay: "#DBE4EE",
+    accent: "#06d6a0", // #81D2C7, #ADD7F6
+    primary: "#284b63", // #61707D
+    secondary: "#e9ecef",
+    tertiary: "#1D2D44",
+    overlay: "#faf9f9",
     text: "#FFFFFF",
     textInverted: "#000000",
-    placeholder: "#D3D3D3",
+    placeholder: "#E4E4E4",
   },
   breakpoints: {
     sm: "576px",

@@ -18,11 +18,11 @@ function App() {
         <section id="about">
           <h2>About me</h2>
           <p>
-            In 2020, I decided to pivot my career and become a programmer. By
-            that time, I've been working in IT for more than 12 years. Although
-            I had some coding experience (the world has yet to see my Pacman
-            game written in BASIC in elementary school), I've never built
-            anything production-grade myself.
+            In 2020, I decided to learn programming and pivot my career. By that
+            time, I've been working in IT for more than 12 years. And though I
+            had some coding experience (the world has yet to see my Pacman game
+            written in BASIC in elementary school), I've never built anything
+            production-grade myself.
           </p>
           <p>
             So, I've enrolled in Le Wagon Bootcamp in Berlin and completed it in
@@ -32,8 +32,8 @@ function App() {
           <h3>Tech stack</h3>
           <ul>
             <li>
-              I have most experience with: <b>TypeScript</b>, <b>React.js</b>,{" "}
-              <b>Next.js</b>
+              I have most experience with: <strong>TypeScript</strong>,{" "}
+              <strong>React.js</strong>, <strong>Next.js</strong>
             </li>
             <li>Using for pet projects: Python and MongoDB</li>
             <li>

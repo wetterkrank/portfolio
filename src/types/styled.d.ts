@@ -12,7 +12,6 @@ declare module "styled-components" {
       secondary: string;
       tertiary: string;
       accent: string;
-      accentSubdued: string;
       overlay: string;
       text: string;
       textInverted: string;
