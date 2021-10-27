@@ -30,5 +30,14 @@ declare module "styled-components" {
       default: string;
       fast: string;
     };
+    zIndices: {
+      bg: number;
+      content: number;
+      cardImage: number;
+      cardImageOverlay: number;
+      cardDescription: number;
+      cardTop: number;
+      navbar: number;
+    };
   }
 }

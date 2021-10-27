@@ -32,8 +32,8 @@ export const Hero = ({ image }: HeroProps) => {
   return (
     <StyledHero>
       <div className="intro">
-        <h2>Hi, I'm Alex,</h2>
-        <p>a full stack web developer from Berlin</p>
+        <h2>Hi! I'm Alex Antsiferov,</h2>
+        <p>a full stack web developer</p>
       </div>
       <Avatar {...image} />
     </StyledHero>

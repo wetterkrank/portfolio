@@ -26,6 +26,15 @@ const theme: DefaultTheme = {
     default: "all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1)",
     fast: "all 0.1s linear",
   },
+  zIndices: {
+    bg: 0,
+    content: 1,
+    cardImage: 2,
+    cardImageOverlay: 3,
+    cardDescription: 4,
+    cardTop: 5,
+    navbar: 6,
+  },
 };
 
 export default theme;

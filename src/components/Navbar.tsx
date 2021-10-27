@@ -1,7 +1,11 @@
 import styled from "styled-components";
+import { A } from "./icons";
 
 const StyledHeader = styled.header`
+  position: sticky;
+  top: 0px;
   height: var(--nav-full-height);
+  z-index: ${({ theme }) => theme.zIndices.navbar};
   display: grid;
   grid-template-columns: max-content auto;
   align-items: center;
@@ -23,40 +27,41 @@ const StyledHeader = styled.header`
     }
     transition: ${({ theme }) => theme.transitions.fast};
   }
-  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-    grid-template-columns: auto;
-    align-content: center;
-    grid-gap: 8px;
-  }
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     padding-left: var(--main-padding-x-sm);
     padding-right: var(--main-padding-x-sm);
   }
+  &.reduced-height {
+    height: var(--nav-reduced-height);
+    ${({ theme }) => theme.mixins.boxShadow};
+  }
+  transition: ${({ theme }) => theme.transitions.fast};
 `;
 
 const StyledLogo = styled.nav`
-  min-width: 200px;
-  font-size: 2em;
-  a {
-    text-decoration: none;
+  svg {
+    height: 51px;
+    width: 34px;
   }
 `;
 
 const StyledNavigation = styled.nav`
   justify-self: end;
-  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-    justify-self: start;
-  }
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 48px;
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: grid;
-    justify-content: start;
     grid-auto-flow: column;
+    justify-content: start;
     grid-gap: 24px;
-    @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-      grid-gap: 16px;
+    &.nav-anchors {
+      @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+        display: none;
+      }
     }
   }
 `;
@@ -69,21 +74,28 @@ export type NavbarProps = {
   }[];
 };
 
+const linkList = (links: NavbarProps["navLinks"]) =>
+  links.map((link) => (
+    <li key={link.name}>
+      <a href={link.url}>{link.name}</a>
+    </li>
+  ));
+
 export const Navbar = ({ navLinks }: NavbarProps) => {
+  const anchors = navLinks.filter((link) => !link.external);
+  const external = navLinks.filter((link) => link.external);
   return (
     <>
       <StyledHeader>
         <StyledLogo>
-          <a href="\">Alex Antsiferov</a>
+          <a href="\">
+            <A />
+            <A />
+          </a>
         </StyledLogo>
         <StyledNavigation>
-          <ul>
-            {navLinks.map((link) => (
-              <li key={link.name}>
-                <a href={link.url}>{link.name}</a>
-              </li>
-            ))}
-          </ul>
+          <ul className="nav-anchors">{linkList(anchors)}</ul>
+          <ul className="nav-external">{linkList(external)}</ul>
         </StyledNavigation>
       </StyledHeader>
     </>

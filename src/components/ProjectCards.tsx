@@ -91,7 +91,7 @@ const StyledProjectCard = styled.li`
       height: 100%;
       grid-column: 1 / -1;
       padding: 40px 40px 30px;
-      z-index: 5;
+      z-index: ${({ theme }) => theme.zIndices.cardTop};
     }
     @media (max-width: 480px) {
       padding: 30px 25px 20px;
@@ -109,7 +109,7 @@ const StyledProjectCard = styled.li`
         &:before {
           content: "";
           display: block;
-          z-index: 0;
+          z-index: ${({ theme }) => theme.zIndices.content};
           width: 100%;
           height: 100%;
           top: 0;
@@ -122,7 +122,7 @@ const StyledProjectCard = styled.li`
   .project-description {
     ${({ theme }) => theme.mixins.boxShadow};
     position: relative;
-    z-index: 2;
+    z-index: ${({ theme }) => theme.zIndices.cardDescription};
     padding: 25px;
     border-radius: ${({ theme }) => theme.borders.radius};
     background-color: ${({ theme }) => theme.colors.secondary};
@@ -142,7 +142,7 @@ const StyledProjectCard = styled.li`
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    z-index: 2;
+    z-index: ${({ theme }) => theme.zIndices.cardDescription};
     margin: 25px 0 10px;
     padding: 0;
     list-style: none;
@@ -189,7 +189,7 @@ const StyledProjectCard = styled.li`
     grid-column: 6 / -1;
     grid-row: 1 / -1;
     position: relative;
-    z-index: 1;
+    z-index: ${({ theme }) => theme.zIndices.cardImage};
     @media (max-width: 768px) {
       grid-column: 1 / -1;
       height: 100%;
@@ -220,7 +220,7 @@ const StyledProjectCard = styled.li`
         left: 0;
         right: 0;
         bottom: 0;
-        z-index: 3;
+        z-index: ${({ theme }) => theme.zIndices.cardImageOverlay};
         transition: ${({ theme }) => theme.transitions.default};
         /* background-color: var(--navy); */
         mix-blend-mode: screen;

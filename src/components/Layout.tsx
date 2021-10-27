@@ -1,7 +1,20 @@
 import { ReactNode } from "react";
 import styled from "styled-components";
+import { InView } from "react-intersection-observer";
+
 import { Footer } from "./Footer";
 import { Navbar, NavbarProps } from "./Navbar";
+
+const Tracker = () => (
+  <InView
+    as="div"
+    onChange={(inView) => {
+      const navbar = document.querySelector("header");
+      if (!inView) navbar?.classList.add("reduced-height");
+      else navbar?.classList.remove("reduced-height");
+    }}
+  ></InView>
+);
 
 const StyledWrapper = styled.main`
   padding-left: var(--main-padding-x);
@@ -14,7 +27,6 @@ const StyledWrapper = styled.main`
   display: grid;
   grid-auto-flow: row;
   gap: 24px;
-
   @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
     margin-top: 40px;
   }
@@ -32,6 +44,7 @@ type LayoutProps = {
 export const Layout = ({ children, links }: LayoutProps) => (
   <>
     <Navbar navLinks={links.navLinks} />
+    <Tracker />
     <StyledWrapper>{children}</StyledWrapper>
     <Footer />
   </>

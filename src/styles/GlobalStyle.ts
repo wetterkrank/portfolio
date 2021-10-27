@@ -43,7 +43,8 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     display: inline-block;
-    text-decoration: none;
+    text-decoration: dotted underline 1px;
+      text-underline-offset: 2px;
     text-decoration-skip-ink: auto;
     position: relative;
     color: ${({ theme }) => theme.colors.accent};
