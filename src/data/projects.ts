@@ -6,7 +6,7 @@ const projects: ProjectCardData[] = [
     url: "#",
     github: "",
     description:
-      "A real estate portal for Spanish and German markets, done in a team of 4 developers. <p> What I did: implemented backoffice pages, main app's home page and property details, content pages (statically generated at build time, with blog content fetched from a CMS), different UI components used throughout the app.</p>",
+      "A real estate portal for Spanish and German markets, done in a team of 4 developers. <p> I implemented backoffice pages, main app's home page and property details, content pages (statically generated at build time, with blog content fetched from a CMS), different UI components used throughout the app.</p>",
     tech: ["TypeScript", "Next.js", "Jest", "Storybook"],
     image: {
       src: "/media/projects/estate-1400w.jpg",
@@ -19,7 +19,7 @@ const projects: ProjectCardData[] = [
     url: "https://wetterkrank.github.io/dasbot/",
     github: "https://github.com/wetterkrank/dasbot",
     description:
-      "A Telegram messenger bot that helps you learn German der/die/das articles.",
+      "A Telegram messenger bot that helps you learn German der/die/das articles. <p>It's using a frequency word list and a simple space repetition algorithm to determine when to practice each word.</p>",
     tech: ["Python", "MongoDB", "Aiogram", "Docker"],
     image: {
       src: "/media/projects/dasbot-1400w.jpg",
@@ -32,7 +32,7 @@ const projects: ProjectCardData[] = [
     url: "http://www.address-mover.com/",
     github: "https://github.com/wetterkrank/address-mover",
     description:
-      "A prototype for a web app facilitating the address change at different service providers. Developed collaboratively as the final project of a nine-week coding bootcamp.",
+      "A prototype for a web app facilitating the address change at different service providers. <p>Developed collaboratively as the final project of a nine-week coding bootcamp.</p>",
     tech: ["Ruby", "Rails 6", "Bootstrap", "Stimulus", "Sucker Punch"],
     image: {
       src: "/media/projects/address-mover-1400w.jpg",
@@ -45,7 +45,7 @@ const projects: ProjectCardData[] = [
     url: "https://escapefromberl.in",
     github: "https://github.com/wetterkrank/flymon",
     description:
-      "A WordPress plugin to display the lowest travel prices for given routes/dates in a WP post. Powers the flight price monitor on my ski destinations website.",
+      "A WordPress plugin to display the lowest travel prices for given routes/dates in a WP post. <p>The prices are requested from the API provided by Kiwi.com and cached for up to 24h using WP transients. Following the link takes you to the booking page.</p>",
     tech: ["PHP", "WordPress"],
     image: {
       src: "/media/projects/flymon-1400w.jpg",
@@ -71,7 +71,7 @@ const projects: ProjectCardData[] = [
     url: "https://www.ttr66.ru/",
     github: "",
     description:
-      "Website for a regional garments wholesaler.<br/> I've used a minimalistic WP theme and written a custom plugin, adding extra page layouts and the import of XML catalog from a warehouse management system.",
+      "Website for a regional garments wholesaler. <p> I've used a minimalistic WP theme and written a custom plugin, adding extra page layouts and the import of XML catalog from a warehouse management system.</p>",
     tech: ["PHP", "WordPress"],
     image: {
       src: "/media/projects/ttr66-1400w.jpg",
