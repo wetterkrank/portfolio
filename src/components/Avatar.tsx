@@ -5,10 +5,10 @@ const StyledAvatar = styled.div`
   width: 180px;
   height: 180px;
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
 
   overflow: hidden;
-  background: ${({ theme }) => theme.colors.placeholder};
+  background: ${({ theme }) => theme.colors.primary};
 
   img {
     width: 100%;

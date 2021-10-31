@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     width: 100%;
     scroll-behavior: smooth;
-    scroll-padding-top: var(--nav-reduced-height);
+    scroll-padding-top: var(--nav-reduced-height); // for correct anchor scroll position with fixed header
   }
   *,
   *:before,
