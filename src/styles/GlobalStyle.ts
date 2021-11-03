@@ -52,7 +52,7 @@ const GlobalStyle = createGlobalStyle`
     &:focus {
       color: ${({ theme }) => theme.colors.starkAccent};
     }
-    transition: ${({ theme }) => theme.transitions.default};
+    /* transition: ${({ theme }) => theme.transitions.default}; */
   }
 
   img,

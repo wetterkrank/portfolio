@@ -26,46 +26,60 @@ const StyledHeader = styled.header`
       outline: 1px dashed ${({ theme }) => theme.colors.text};
       outline-offset: 3px;
     }
-    transition: ${({ theme }) => theme.transitions.fast};
+    transition: all 0.1s linear;
+    transition-property: color, outline, outline-offset;
   }
+
   &.reduced-height {
     height: var(--nav-reduced-height);
     ${({ theme }) => theme.mixins.boxShadow};
+    transition: all 0.1s linear;
   }
-  transition: ${({ theme }) => theme.transitions.fast};
+
+  transition: all 0.1s linear;
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     padding-left: var(--main-padding-x-sm);
     padding-right: var(--main-padding-x-sm);
-    grid-template-columns: auto;
-    justify-content: center;
   }
 `;
 
 const StyledLogo = styled.nav`
+  height: 50px;
+  display: flex;
+  align-items: center;
   font-size: 1.6em;
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    font-size: 1.5em;
+  }
 `;
 
 const StyledNavigation = styled.nav`
   justify-self: end;
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 48px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  a {
+    vertical-align: middle;
+  }
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: start;
-    grid-gap: 24px;
   }
-  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-    ul.nav-anchors {
-      display: none;
+  li {
+    float: left;
+    margin-left: 24px;
+
+    &:not(:last-of-type) {
+      @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+        display: none;
+      }
     }
-  }
-  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-    display: none;
+    &:last-of-type {
+      @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+        font-size: 1.3em;
+      }
+    }
   }
 `;
 
@@ -85,8 +99,6 @@ const linkList = (links: NavbarProps["navLinks"]) =>
   ));
 
 export const Navbar = ({ navLinks }: NavbarProps) => {
-  const anchors = navLinks.filter((link) => !link.external);
-  const external = navLinks.filter((link) => link.external);
   return (
     <>
       <StyledHeader>
@@ -94,8 +106,7 @@ export const Navbar = ({ navLinks }: NavbarProps) => {
           <a href="\">Alex Antsiferov</a>
         </StyledLogo>
         <StyledNavigation>
-          <ul className="nav-anchors">{linkList(anchors)}</ul>
-          <ul className="nav-external">{linkList(external)}</ul>
+          <ul className="nav-links">{linkList(navLinks)}</ul>
         </StyledNavigation>
       </StyledHeader>
     </>

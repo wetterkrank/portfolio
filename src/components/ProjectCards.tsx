@@ -226,7 +226,6 @@ const StyledProjectCard = styled.li`
         bottom: 0;
         z-index: ${({ theme }) => theme.zIndices.cardImageOverlay};
         transition: ${({ theme }) => theme.transitions.default};
-        /* background-color: var(--navy); */
         mix-blend-mode: screen;
       }
     }
