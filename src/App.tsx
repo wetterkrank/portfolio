@@ -1,10 +1,8 @@
 import { ThemeProvider } from "styled-components";
 
-import { Layout } from "./components/Layout";
 import { GlobalStyle, theme } from "./styles";
 import { common, projects } from "./data";
-import { Hero } from "./components/Hero";
-import { ProjectsList } from "./components/ProjectCards";
+import { Layout, Hero, ProjectList, LinkList } from "./components";
 
 function App() {
   return (
@@ -55,25 +53,13 @@ function App() {
 
         <section id="projects">
           <h2>Projects</h2>
-          <ProjectsList projects={projects} />
+          <ProjectList projects={projects} />
         </section>
 
         <section id="contacts">
           <h2>Get in touch</h2>
           <p>I'm open to job opportunities. Send me a message:</p>
-          <ul>
-            <li>
-              <a href="mailto:antsiferov@gmail.com">antsiferov@gmail.com</a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/antsiferov/">
-                linkedin.com/in/antsiferov
-              </a>
-            </li>
-            <li>
-              <a href="https://t.me/wetterkrank">telegram: wetterkrank</a>
-            </li>
-          </ul>
+          <LinkList links={common.contacts} />
         </section>
       </Layout>
     </ThemeProvider>

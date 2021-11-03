@@ -299,7 +299,7 @@ export const ProjectCard = ({ data }: { data: ProjectCardData }) => {
   );
 };
 
-const StyledProjectsList = styled.ul`
+const StyledProjectList = styled.ul`
   padding: 0;
   width: 100%;
   max-width: 1000px;
@@ -309,12 +309,12 @@ const StyledProjectsList = styled.ul`
   gap: 16px;
 `;
 
-export const ProjectsList = ({ projects }: { projects: ProjectCardData[] }) => {
+export const ProjectList = ({ projects }: { projects: ProjectCardData[] }) => {
   return (
-    <StyledProjectsList>
+    <StyledProjectList>
       {projects.map((project) => (
         <ProjectCard data={project} key={project.name} />
       ))}
-    </StyledProjectsList>
+    </StyledProjectList>
   );
 };

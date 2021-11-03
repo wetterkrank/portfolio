@@ -1,4 +1,4 @@
-import { ProjectCardData } from "../components/ProjectCards";
+import { ProjectCardData } from "../components";
 
 const projects: ProjectCardData[] = [
   {

@@ -79,7 +79,7 @@ export type NavbarProps = {
 
 const linkList = (links: NavbarProps["navLinks"]) =>
   links.map((link) => (
-    <li key={link.name}>
+    <li key={link.name} id={`nav-a-${link.name.toLowerCase()}`}>
       <a href={link.url}>{link.name}</a>
     </li>
   ));

@@ -9,15 +9,15 @@ const common = {
     navLinks: [
       {
         name: "About",
-        url: "/#about",
+        url: "#about",
       },
       {
         name: "Projects",
-        url: "/#projects",
+        url: "#projects",
       },
       {
         name: "Contacts",
-        url: "/#contacts",
+        url: "#contacts",
       },
       {
         name: "Blog",
@@ -31,6 +31,20 @@ const common = {
       },
     ],
   },
+  contacts: [
+    {
+      name: "antsiferov@gmail.com",
+      url: "mailto:antsiferov@gmail.com",
+    },
+    {
+      name: "www.linkedin.com/in/antsiferov",
+      url: "https://www.linkedin.com/in/antsiferov",
+    },
+    {
+      name: "telegram: wetterkrank",
+      url: "https://t.me/wetterkrank",
+    },
+  ],
 };
 
 export default common;
