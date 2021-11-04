@@ -2,16 +2,16 @@ import { ProjectCardData } from "../components";
 
 const projects: ProjectCardData[] = [
   {
-    name: "h****.com",
-    url: "#",
+    name: "Hoome.com",
+    url: "https://hoome.com",
     github: "",
     description:
-      "A real estate portal for Spanish and German markets, done in a team of 4 developers. <p> I implemented backoffice pages, main app's home page and property details, content pages (statically generated at build time, with blog content fetched from a CMS), different UI components used throughout the app.</p>",
+      "A real estate portal for Spanish and German markets, done in a team of 4 developers. <p> I implemented backoffice pages, main app's home page and property details, content pages (statically generated at build time, with blog content fetched from a CMS), and different UI components used throughout the app.</p>",
     tech: ["TypeScript", "Next.js", "Jest", "Storybook"],
     image: {
-      src: "/media/projects/estate-1400w.jpg",
+      src: "/media/projects/hoome-1400w.jpg",
       srcset:
-        "/media/projects/estate-700w.jpg, /media/projects/estate-1050w.jpg 1.5x, /media/projects/estate-1400w.jpg 2x",
+        "/media/projects/hoome-700w.jpg, /media/projects/hoome-1050w.jpg 1.5x, /media/projects/hoome-1400w.jpg 2x",
     },
   },
   {
