@@ -26,7 +26,7 @@ const common = {
       },
       {
         name: "CV",
-        url: "https://docs.google.com/document/d/1SyeWfH8Orgv8wKAPB9vLFzA5382Pl8aPwRwcGbCZMJk/",
+        url: "https://docs.google.com/document/d/1SyeWfH8Orgv8wKAPB9vLFzA5382Pl8aPwRwcGbCZMJk/export?format=pdf",
         external: true,
       },
     ],
