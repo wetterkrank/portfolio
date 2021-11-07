@@ -33,15 +33,17 @@ const StyledHeader = styled.header`
     transition-property: color, outline, outline-offset;
   }
 
-  &.reduced-height {
-    height: var(--nav-reduced-height);
-    ${({ theme }) => theme.mixins.boxShadow};
-    transition: height 0.2s linear;
-  }
-
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    position: relative;
     padding-left: var(--main-padding-x-sm);
     padding-right: var(--main-padding-x-sm);
+  }
+  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    &.reduced-height {
+      height: var(--nav-reduced-height);
+      ${({ theme }) => theme.mixins.boxShadow};
+      transition: height 0.2s linear;
+    }
   }
 `;
 

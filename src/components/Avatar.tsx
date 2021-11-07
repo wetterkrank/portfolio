@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 const StyledAvatar = styled.div`
+  box-sizing: content-box;
   border-radius: 9999px;
   width: 180px;
   height: 180px;
   border-style: solid;
-  border-width: 2px;
+  /* border-width: 1px; */
 
   overflow: hidden;
   background: ${({ theme }) => theme.colors.primary};

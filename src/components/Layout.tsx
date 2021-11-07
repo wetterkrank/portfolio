@@ -31,6 +31,7 @@ const StyledWrapper = styled.main`
     margin-top: calc(var(--nav-full-height) + 40px);
   }
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    margin-top: 40px;
     padding-left: var(--main-padding-x-sm);
     padding-right: var(--main-padding-x-sm);
   }
