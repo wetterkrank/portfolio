@@ -1,6 +1,6 @@
-import { Link } from "../types/shared";
+import { ILink } from "../types/shared";
 
-export const LinkList = ({ links }: { links: Link[] }) => {
+export const LinkList = ({ links }: { links: ILink[] }) => {
   return (
     <ul>
       {links.map((link) => (

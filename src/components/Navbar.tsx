@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ILink } from "../types/shared";
 
 const StyledHeader = styled.header`
   position: fixed;
@@ -15,6 +16,8 @@ const StyledHeader = styled.header`
 
   background-color: ${({ theme }) => theme.colors.accent};
   color: ${({ theme }) => theme.colors.textInverted};
+
+  transition: height 0.1s linear;
 
   a {
     color: ${({ theme }) => theme.colors.textInverted};
@@ -33,10 +36,9 @@ const StyledHeader = styled.header`
   &.reduced-height {
     height: var(--nav-reduced-height);
     ${({ theme }) => theme.mixins.boxShadow};
-    transition: all 0.1s linear;
+    transition: height 0.2s linear;
   }
 
-  transition: all 0.1s linear;
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     padding-left: var(--main-padding-x-sm);
     padding-right: var(--main-padding-x-sm);
@@ -44,9 +46,7 @@ const StyledHeader = styled.header`
 `;
 
 const StyledLogo = styled.nav`
-  height: 50px;
   display: flex;
-  align-items: center;
   font-size: 1.6em;
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     font-size: 1.5em;
@@ -55,50 +55,58 @@ const StyledLogo = styled.nav`
 
 const StyledNavigation = styled.nav`
   justify-self: end;
-  height: 50px;
+  justify-content: end;
   display: flex;
-  align-items: center;
-  a {
-    vertical-align: middle;
-  }
+
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
+  ul.nav-anchors {
+    margin-right: 24px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    ul.nav-anchors {
+      display: none;
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    ul.nav-external {
+      li:not(:last-of-type) {
+        display: none;
+      }
+      font-size: 1.2em;
+    }
+  }
+
   li {
     float: left;
     margin-left: 24px;
-
-    &:not(:last-of-type) {
-      @media (max-width: ${({ theme }) => theme.breakpoints.md}) {
-        display: none;
-      }
-    }
-    &:last-of-type {
-      @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-        font-size: 1.3em;
-      }
+    a {
+      vertical-align: middle;
     }
   }
 `;
 
 export type NavbarProps = {
-  navLinks: {
-    name: string;
-    url: string;
-    external?: boolean;
-  }[];
+  navLinks: ILink[];
 };
 
 const linkList = (links: NavbarProps["navLinks"]) =>
-  links.map((link) => (
-    <li key={link.name} id={`nav-a-${link.name.toLowerCase()}`}>
-      <a href={link.url}>{link.name}</a>
-    </li>
-  ));
+  links.map((link) => {
+    return (
+      <li key={link.name} id={`nav-a-${link.name.toLowerCase()}`}>
+        <a href={link.url}>{link.name}</a>
+      </li>
+    );
+  });
 
 export const Navbar = ({ navLinks }: NavbarProps) => {
+  const anchors = navLinks.filter((link) => link.url[0] === "#");
+  const external = navLinks.filter((link) => link.url[0] !== "#");
   return (
     <>
       <StyledHeader>
@@ -106,7 +114,8 @@ export const Navbar = ({ navLinks }: NavbarProps) => {
           <a href="\">Alex Antsiferov</a>
         </StyledLogo>
         <StyledNavigation>
-          <ul className="nav-links">{linkList(navLinks)}</ul>
+          <ul className="nav-anchors">{linkList(anchors)}</ul>
+          <ul className="nav-external">{linkList(external)}</ul>
         </StyledNavigation>
       </StyledHeader>
     </>

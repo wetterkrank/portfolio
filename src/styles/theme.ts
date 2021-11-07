@@ -19,9 +19,6 @@ const theme: DefaultTheme = {
     md: "768px",
     xl: "1200px",
   },
-  borders: {
-    radius: "3px",
-  },
   transitions: {
     default: "all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1)",
     fast: "all 0.1s linear",

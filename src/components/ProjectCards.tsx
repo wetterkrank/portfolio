@@ -128,7 +128,7 @@ const StyledProjectCard = styled.li`
     position: relative;
     z-index: ${({ theme }) => theme.zIndices.cardDescription};
     padding: 25px;
-    border-radius: ${({ theme }) => theme.borders.radius};
+    border-radius: 3px;
     background-color: ${({ theme }) => theme.colors.secondary};
     color: ${({ theme }) => theme.colors.textInverted};
     @media (max-width: 768px) {
@@ -147,19 +147,19 @@ const StyledProjectCard = styled.li`
     flex-wrap: wrap;
     position: relative;
     z-index: ${({ theme }) => theme.zIndices.cardDescription};
-    margin: 25px 0 10px;
+    margin: 25px 0 10px 0;
     padding: 0;
     list-style: none;
     li {
       margin: 0 20px 5px 0;
       color: ${({ theme }) => theme.colors.text};
-      /* font-family: var(--font-mono); */
-      /* font-size: var(--fz-xs); */
+      font-size: 0.9em;
       white-space: nowrap;
     }
     @media (max-width: 768px) {
       margin: 10px 0;
       li {
+        font-size: 0.8em;
         margin: 0 10px 5px 0;
       }
     }
@@ -203,7 +203,7 @@ const StyledProjectCard = styled.li`
       width: 100%;
       height: 100%;
       background-color: ${({ theme }) => theme.colors.secondary};
-      border-radius: ${({ theme }) => theme.borders.radius};
+      border-radius: 3px;
       vertical-align: middle;
       &:hover,
       &:focus {
@@ -232,13 +232,12 @@ const StyledProjectCard = styled.li`
     .img {
       width: 100%;
       object-fit: cover;
-      border-radius: ${({ theme }) => theme.borders.radius};
+      border-radius: 3px;
       mix-blend-mode: multiply;
       filter: grayscale(100%) contrast(1) brightness(90%);
       @media (max-width: 768px) {
         height: 100%;
-        filter: grayscale(100%) contrast(1) brightness(20%);
-        /* filter: opacity(50%); */
+        filter: grayscale(100%) contrast(1) brightness(40%) opacity(50%);
       }
     }
   } // .project-image

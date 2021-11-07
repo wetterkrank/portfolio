@@ -23,9 +23,6 @@ declare module "styled-components" {
       md: string;
       xl: string;
     };
-    borders: {
-      radius: string;
-    };
     transitions: {
       default: string;
       fast: string;

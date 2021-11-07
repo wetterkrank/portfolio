@@ -1,11 +1,12 @@
 #!/bin/bash
 
 ## define image directory
-DIR=./public/media/projects
+# DIR=./public/media/projects
+DIR=./images
 
 ## define image sizes
-# sizes=(180 270 360 540)
-sizes=(700 1050 1400)
+sizes=(180 270 360)
+# sizes=(700 1050 1400)
 
 ## imagemagick function
 ## convert $1(image) $2(width) $3(newname)
