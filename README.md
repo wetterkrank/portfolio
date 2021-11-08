@@ -1,5 +1,7 @@
-## Notes
+## My personal website & portfolio - notes
 - The site is built with Create React App.
+- Project cards are borrowed from https://brittanychiang.com/ and somewhat adapted.
+
 - BTW, it's not so easy to customize the Webpack configuration when you're using CRA. You either have to `eject`, or use 3rd party tools (`craco`, `react-app-rewired` etc).
 - How do I know this? Well, I was going to use a couple of Webpack plugins to automate the image resizing/srcset generation...
 - So I added a little bash script to batch-resize images with imagemagick, and created srcsets manually. This will do for now.
