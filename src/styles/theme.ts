@@ -4,8 +4,8 @@ import mixins from "./mixins";
 const theme: DefaultTheme = {
   mixins,
   colors: {
-    accent: "#06d6a0", // #81D2C7, #ADD7F6
-    primary: "#284b63", // #61707D
+    accent: "#06d6a0", // alt: #81D2C7, #ADD7F6
+    primary: "#284b63", // alt: #61707D
     secondary: "#e9ecef",
     tertiary: "#1D2D44",
     overlay: "#faf9f9",

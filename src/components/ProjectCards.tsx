@@ -205,6 +205,7 @@ const StyledProjectCard = styled.li`
       background-color: ${({ theme }) => theme.colors.secondary};
       border-radius: 3px;
       vertical-align: middle;
+      transition: ${({ theme }) => theme.transitions.default};
       &:hover,
       &:focus {
         background: transparent;
