@@ -29,7 +29,7 @@ const projects: ProjectCardData[] = [
   },
   {
     name: "Address Mover",
-    url: "http://www.address-mover.com/",
+    url: "http://address-mover.herokuapp.com/",
     github: "https://github.com/wetterkrank/address-mover",
     description:
       "A prototype for a web app facilitating the address change at different service providers. <p>Developed collaboratively as the final project of a nine-week coding bootcamp.</p>",
