@@ -58,7 +58,7 @@ function App() {
 
         <section id="contacts">
           <h2>Get in touch</h2>
-          <p>I'm open to job opportunities. Send me a message:</p>
+          <p>Send me a message:</p>
           <LinkList links={common.contacts} />
         </section>
       </Layout>

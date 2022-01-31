@@ -28,6 +28,19 @@ const projects: ProjectCardData[] = [
     },
   },
   {
+    name: "BB-Bookie",
+    url: "https://github.com/wetterkrank",
+    github: "https://github.com/wetterkrank",
+    description:
+      "A web scraper that automatically books time slots at Berlin's swimming pools. <p>Runs on Apify.com, uses Puppeteer to control a headless Chromium browser, hooks into Zapier to send email reports. </p>",
+    tech: ["JavaScript", "Puppeteer", "Apify", "Zapier"],
+    image: {
+      src: "/media/projects/bb-bookie-1400w.jpg",
+      srcset:
+        "/media/projects/bb-bookie-700w.jpg, /media/projects/bb-bookie-1050w.jpg 1.5x, /media/projects/bb-bookie-1400w.jpg 2x",
+    },
+  },
+  {
     name: "Address Mover",
     url: "http://address-mover.herokuapp.com/",
     github: "https://github.com/wetterkrank/address-mover",
