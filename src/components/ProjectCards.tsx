@@ -99,6 +99,8 @@ const StyledProjectCard = styled.li`
   }
 
   .project-title {
+    position: relative;
+    z-index: ${({ theme }) => theme.zIndices.cardDescription};
     @media (min-width: 768px) {
       margin: 0 0 20px;
     }

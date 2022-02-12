@@ -2,7 +2,7 @@ const common = {
   avatar: {
     src: "/media/alex-antsiferov.jpg",
     srcset:
-      "/media/alex-antsiferov-180w.jpg, /media/alex-antsiferov-270w.jpg 1.5x, /media/alex-antsiferov-360w.jpg 2x, /media/alex-antsiferov.jpg 3x",
+      "/media/alex-antsiferov-200w.jpg, /media/alex-antsiferov-300w.jpg 1.5x, /media/alex-antsiferov-400w.jpg 2x, /media/alex-antsiferov-600w.jpg 3x",
     alt: "Alex Antsiferov",
   },
   links: {

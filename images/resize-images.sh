@@ -5,13 +5,14 @@
 DIR=./images
 
 ## define image sizes
-# sizes=(180 270 360)
-sizes=(700 1050 1400)
+sizes=(200 300 400 600)
+# sizes=(700 1050 1400)
 
 ## imagemagick function
 ## convert $1(image) $2(width) $3(newname)
+# convert -quality 90 -verbose $1 -thumbnail $2 $3
 resize() {
-  convert -quality 90 -verbose $1 -thumbnail $2 $3
+  convert -quality 90 -interlace plane -verbose $1 -thumbnail $2 $3
 }
 
 ## find all images

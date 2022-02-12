@@ -28,19 +28,6 @@ const projects: ProjectCardData[] = [
     },
   },
   {
-    name: "BB-Bookie",
-    url: "https://github.com/wetterkrank",
-    github: "https://github.com/wetterkrank",
-    description:
-      "A web scraper that automatically books time slots at Berlin's swimming pools. <p>Runs on Apify.com, uses Puppeteer to control a headless Chromium browser, hooks into Zapier to send email reports. </p>",
-    tech: ["JavaScript", "Puppeteer", "Apify", "Zapier"],
-    image: {
-      src: "/media/projects/bb-bookie-1400w.jpg",
-      srcset:
-        "/media/projects/bb-bookie-700w.jpg, /media/projects/bb-bookie-1050w.jpg 1.5x, /media/projects/bb-bookie-1400w.jpg 2x",
-    },
-  },
-  {
     name: "Address Mover",
     url: "http://address-mover.herokuapp.com/",
     github: "https://github.com/wetterkrank/address-mover",
@@ -80,19 +67,6 @@ const projects: ProjectCardData[] = [
     },
   },
   {
-    name: "ttr66.ru",
-    url: "https://www.ttr66.ru/",
-    github: "",
-    description:
-      "Website for a regional garments wholesaler. <p> I've used a minimalistic WP theme and written a custom plugin, adding extra page layouts and the import of XML catalog from a warehouse management system.</p>",
-    tech: ["PHP", "WordPress"],
-    image: {
-      src: "/media/projects/ttr66-1400w.jpg",
-      srcset:
-        "/media/projects/ttr66-700w.jpg, /media/projects/ttr66-1050w.jpg 1.5x, /media/projects/ttr66-1400w.jpg 2x",
-    },
-  },
-  {
     name: "Genderful",
     url: "http://genderful.yak.supplies/",
     github: "https://github.com/wetterkrank/genderful",
@@ -103,6 +77,32 @@ const projects: ProjectCardData[] = [
       src: "/media/projects/genderful-1400w.jpg",
       srcset:
         "/media/projects/genderful-700w.jpg, /media/projects/genderful-1050w.jpg 1.5x, /media/projects/genderful-1400w.jpg 2x",
+    },
+  },
+  {
+    name: "BB-Bookie",
+    url: "https://github.com/wetterkrank",
+    github: "https://github.com/wetterkrank",
+    description:
+      "A web scraper that automatically books time slots at Berlin's swimming pools. <p>Runs on Apify.com, uses Puppeteer to control a headless Chromium browser, hooks into Zapier to send email reports. </p>",
+    tech: ["JavaScript", "Puppeteer", "Apify", "Zapier"],
+    image: {
+      src: "/media/projects/bb-bookie-1400w.jpg",
+      srcset:
+        "/media/projects/bb-bookie-700w.jpg, /media/projects/bb-bookie-1050w.jpg 1.5x, /media/projects/bb-bookie-1400w.jpg 2x",
+    },
+  },
+  {
+    name: "ttr66.ru",
+    url: "https://www.ttr66.ru/",
+    github: "",
+    description:
+      "Website for a regional garments wholesaler. <p> I've used a minimalistic WP theme and written a custom plugin, adding extra page layouts and the import of XML catalog from a warehouse management system.</p>",
+    tech: ["PHP", "WordPress"],
+    image: {
+      src: "/media/projects/ttr66-1400w.jpg",
+      srcset:
+        "/media/projects/ttr66-700w.jpg, /media/projects/ttr66-1050w.jpg 1.5x, /media/projects/ttr66-1400w.jpg 2x",
     },
   },
 ];
