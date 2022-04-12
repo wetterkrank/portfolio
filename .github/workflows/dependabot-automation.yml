@@ -1,6 +1,6 @@
 name: Dependabot Automation
 
-on: pull_request_target
+on: pull_request
 
 permissions:
   contents: write
@@ -9,10 +9,8 @@ permissions:
 jobs:
   dependabot-approve-and-merge:
     runs-on: ubuntu-latest
-    if: github.actor == 'dependabot[bot]'
     steps:
-      - uses: actions/checkout@v2
-      - uses: ahmadnassri/action-dependabot-auto-merge@v2
+      - uses: fastify/github-action-merge-dependabot@v3.0.0
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           target: minor
+          github-token: ${{ secrets.GITHUB_TOKEN }}
