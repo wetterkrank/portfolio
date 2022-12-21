@@ -16,10 +16,10 @@ const projects: ProjectCardData[] = [
   },
   {
     name: "Dasbot",
-    url: "https://wetterkrank.github.io/dasbot/",
+    url: "https://dasbot.yak.supplies",
     github: "https://github.com/wetterkrank/dasbot",
     description:
-      "A Telegram messenger bot that helps you learn German der/die/das articles. <p>It's using a frequency word list and a simple space repetition algorithm to determine when to practice each word.</p>",
+      "A Telegram bot that helps you learn German der/die/das articles. <p>It's using a frequency word list and a simple space repetition algorithm to determine when to practice each word.</p>",
     tech: ["Python", "MongoDB", "Aiogram", "Docker"],
     image: {
       src: "/media/projects/dasbot-1400w.jpg",
@@ -29,7 +29,7 @@ const projects: ProjectCardData[] = [
   },
   {
     name: "Address Mover",
-    url: "http://address-mover.herokuapp.com/",
+    url: "https://address-mover.fly.dev/",
     github: "https://github.com/wetterkrank/address-mover",
     description:
       "A prototype for a web app facilitating the address change at different service providers. <p>Developed collaboratively as the final project of a nine-week coding bootcamp.</p>",
