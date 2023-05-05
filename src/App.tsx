@@ -16,38 +16,40 @@ function App() {
         <section id="about">
           <h2>About me</h2>
           <p>
-            In 2020, I decided to pivot my career and learn programming. By that
-            time, I've been working in IT for more than 12 years. And despite
-            having some coding experience (the world has yet to see my Pacman
-            game written in BASIC in elementary school), I've never built
-            anything production-grade myself.
+            In 2020, I decided to pivot my career and learn programming. At that
+            point, I had been working in IT for more than 12 years. Despite
+            having some coding experience (the world has yet to see the Pacman
+            game I wrote in BASIC when I was in elementary school), I had never
+            built anything production-grade myself.
           </p>
           <p>
-            So, I've enrolled in Le Wagon Bootcamp in Berlin and completed it in
-            December 2020. After that, I found my first developer job and have
-            been enjoying it every single day!
+            So, I enrolled in the Le Wagon Bootcamp in Berlin and completed it
+            in December 2020. After that, I found my first developer job and
+            have been finding joy in the journey each and every day!
           </p>
           <h3>Tech stack</h3>
           <ul>
             <li>
-              I have most experience with: <strong>TypeScript</strong>,{" "}
-              <strong>React.js</strong>, <strong>Next.js</strong>
+              I am currently working and have most experience with:{" "}
+              <strong>Ruby on Rails</strong>
             </li>
-            <li>Using for pet projects: Python and MongoDB</li>
             <li>
-              Completed a study project with: Ruby on Rails and PostgreSQL
+              Built several front end apps with: TypeScript, React.js, Next.js
+            </li>
+            <li>
+              Using for pet projects: Python and MongoDB (self-hosted and Atlas)
             </li>
             <li>Did a few paid gigs with: PHP, WordPress + WooCommerce</li>
             <li>
-              Can (and have) set up a Docker container, nginx, Postfix and Let's
-              Encrypt, can write a shell script
+              Can set up a Docker container, nginx, Postfix and Let's Encrypt,
+              can write a shell script
             </li>
             <li>Have worked with GitHub, Vercel and Heroku</li>
           </ul>
           <h3>What I value</h3>
           <p>
-            Doing meaningful things, quality over quantity, teamwork, constant
-            learning
+            Doing meaningful things, quality over quantity, teamwork, acquiring
+            new skills
           </p>
         </section>
 

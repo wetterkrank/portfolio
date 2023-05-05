@@ -30,7 +30,7 @@ export const Footer = () => {
   return (
     <StyledFooter>
       <span>
-        © 2021 Alex Antsiferov ·{" "}
+        © 2021&ndash;{new Date().getFullYear()} Alex Antsiferov ·{" "}
         <a href="https://github.com/wetterkrank/portfolio">
           this site's code on <GitHubIcon />
         </a>
