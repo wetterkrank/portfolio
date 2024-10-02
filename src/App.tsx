@@ -14,37 +14,34 @@ function App() {
         </section>
 
         <section id="about">
-          <h2>About me</h2>
+          <p>In 2020, I decided to pivot my career and learn programming.</p>
           <p>
-            In 2020, I decided to pivot my career and learn programming. At that
-            point, I had been working in IT for more than 12 years. Despite
-            having some coding experience (the world has yet to see the Pacman
-            game I wrote in BASIC when I was in elementary school), I had never
-            built anything production-grade myself.
+            By that point, I had been working in IT for more than 12 years. And
+            despite having some coding experience (the world has yet to see the
+            Pacman game I wrote in BASIC when I was in elementary school), I had
+            never built anything production-grade myself.
           </p>
           <p>
             So, I enrolled in the Le Wagon Bootcamp in Berlin and completed it
             in December 2020. After that, I found my first developer job and
-            have been finding joy in the journey each and every day!
+            have been enjoying every single working day since!
           </p>
           <h3>Tech stack</h3>
           <ul>
             <li>
-              I am currently working and have most experience with:{" "}
-              <strong>Ruby on Rails</strong>
+              I currently work with <b>Ruby on Rails</b>
             </li>
             <li>
-              Built several front end apps with: TypeScript, React.js, Next.js
+              Built several front end apps with <b>TypeScript</b>, <b>React</b>,{" "}
+              <b>Next.js</b>
             </li>
             <li>
-              Using for pet projects: Python and MongoDB (self-hosted and Atlas)
+              Using <b>Python</b> and <b>MongoDB</b> in pet projects
             </li>
-            <li>Did a few paid gigs with: PHP, WordPress + WooCommerce</li>
+            <li>Done a few paid gigs with PHP, WordPress + WooCommerce</li>
             <li>
-              Can set up a Docker container, nginx, Postfix and Let's Encrypt,
-              can write a shell script
+              Comfortable with Ubuntu, Docker, GitHub, Vercel, Heroku, and AWS
             </li>
-            <li>Have worked with GitHub, Vercel and Heroku</li>
           </ul>
           <h3>What I value</h3>
           <p>
